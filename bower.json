@@ -1,0 +1,11 @@
+{
+  "name": "paperhive-slides",
+  "version": "0.0.0",
+  "authors": [
+    "André Gaul <andre@gaul.io>"
+  ],
+  "license": "GPLv3",
+  "dependencies": {
+    "angular-bootstrap": "~0.13.0"
+  }
+}

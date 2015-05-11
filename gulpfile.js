@@ -8,10 +8,12 @@ var paths = {
   statics: [
     'src/index.html',
     'src/index.css',
+    'src/index.js',
     'src/templates/**/*.html',
     'src/img/**/*'
   ],
   angularBootstrap: 'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
+  bootstrap: 'bower_components/bootstrap/dist/**/*',
   build: 'build/**/*'
 };
 
@@ -23,10 +25,16 @@ gulp.task('statics', function () {
   var angularBootstrap = gulp.src(paths.angularBootstrap)
     .pipe(gulp.dest('build/vendor/angular-bootstrap'));
 
+  var bootstrap = gulp.src(
+      'bower_components/bootstrap/dist/**/*',
+      {src: 'bower_components/bootstrap/dist'}
+    )
+    .pipe(gulp.dest('build/vendor/bootstrap'));
+
   //var fontawesome = gulp.src('bower_components/fontawesome/fonts/*')
   //  .pipe(gulp.dest('build/assets/fontawesome/fonts'));
 
-  return merge(statics, angularBootstrap);
+  return merge(statics, angularBootstrap, bootstrap);
 });
 
 gulp.task('clean', function(cb) {

@@ -6,6 +6,7 @@
   ],
   "license": "GPLv3",
   "dependencies": {
-    "angular-bootstrap": "~0.13.0"
+    "angular-bootstrap": "~0.13.0",
+    "bootstrap": "~3.3.4"
   }
 }

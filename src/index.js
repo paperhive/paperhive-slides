@@ -61,6 +61,5 @@ app.directive('slide', function() {
     link: function(scope, element, attrs, slidesCtrl) {
       slidesCtrl.addSlide(scope);
     },
-
   };
 });

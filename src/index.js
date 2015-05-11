@@ -57,6 +57,7 @@ app.directive('slide', function() {
     require: '^slides',
     transclude: true,
     scope: {},
+    replace: true,
     templateUrl: 'templates/directives/slide.html',
     link: function(scope, element, attrs, slidesCtrl) {
       slidesCtrl.addSlide(scope);

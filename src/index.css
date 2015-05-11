@@ -2,6 +2,8 @@
 
 body {
   background: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
 }
 
 .slides {
@@ -25,7 +27,7 @@ body {
   top: 50%;
   position: absolute;
   overflow: hidden;
-  padding: 20px 40px;
+  padding: 40px 40px;
   transition: opacity ease 0.5s;
 }
 
@@ -34,4 +36,32 @@ body {
 }
 .slide.ng-leave, .slide.ng-enter.ng-enter-active {
   opacity: 1;
+}
+
+.slide.slide-full-img {
+  background-color: none;
+  background-size: cover;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 25px;
+  color: black;
+  text-align: center;
+}
+.sm-margin-top {
+  margin-top: 30px;
+}
+.lg-margin-top {
+  margin-top: 300px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 600;
 }

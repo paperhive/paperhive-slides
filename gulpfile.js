@@ -12,8 +12,6 @@ var paths = {
     'src/templates/**/*.html',
     'src/img/**/*'
   ],
-  angularBootstrap: 'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
-  bootstrap: 'bower_components/bootstrap/dist/**/*',
   build: 'build/**/*'
 };
 
@@ -22,19 +20,33 @@ gulp.task('statics', function () {
   var statics = gulp.src(paths.statics, {base: 'src'})
     .pipe(gulp.dest('build'));
 
-  var angularBootstrap = gulp.src(paths.angularBootstrap)
+  var angular = gulp.src([
+    'bower_components/angular/angular.min.js',
+    'bower_components/angular-animate/angular-animate.min.js',
+  ]).pipe(gulp.dest('build/vendor/angular'));
+
+  var angularBootstrap = gulp.src('bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')
     .pipe(gulp.dest('build/vendor/angular-bootstrap'));
 
   var bootstrap = gulp.src(
       'bower_components/bootstrap/dist/**/*',
-      {src: 'bower_components/bootstrap/dist'}
+      {base: 'bower_components/bootstrap/dist'}
     )
     .pipe(gulp.dest('build/vendor/bootstrap'));
+  
+  var jquery = gulp.src('bower_components/jquery/dist/jquery.min.js')
+    .pipe(gulp.dest('build/vendor/jquery'));
+  
+  var opensans = gulp.src([
+    'bower_components/open-sans-fontface/open-sans.css',
+    'bower_components/open-sans-fontface/fonts/**/*',
+  ], {base: 'bower_components/open-sans-fontface'})
+    .pipe(gulp.dest('build/vendor/opensans'));
 
   //var fontawesome = gulp.src('bower_components/fontawesome/fonts/*')
   //  .pipe(gulp.dest('build/assets/fontawesome/fonts'));
 
-  return merge(statics, angularBootstrap, bootstrap);
+  return merge(statics, angular, angularBootstrap, bootstrap, jquery, opensans);
 });
 
 gulp.task('clean', function(cb) {

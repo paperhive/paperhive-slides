@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html ng-app="SlidesApp">
+  <head>
+    <title>PaperHive</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/opensans/open-sans.css">
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body ng-cloak>
+    <slides>
+
+      <slide class="slide-full-img" style="background-image: url('img/papers-alive.gif')">
+        <div class="row">
+          <div class="col-md-12 box text-center sm-margin-top">
+            <h1><a href="https://paperhive.org">PaperHive</a></h1>
+            <h2>Papers, alive.</h2>
+            <p>
+              May 12, 2015, Future for the annotation of digital objects
+            </p>
+          </div>
+        </div>
+        <div class="row sm-margin-top">
+          <div class="col-md-4 col-md-offset-1 box text-center">
+            <img src="img/andre.jpg" class="img-circle" style="max-width: 150px"><br>
+            André Gaul<br>
+            <a href="https://twitter.com/andrenarchy">@andrenarchy</a>
+          </div>
+          <div class="col-md-4 col-md-offset-2 box text-center">
+            <img src="img/nico.jpg" class="img-circle" style="max-width: 150px"><br>
+            Nico Schlömer<br>
+            <a href="https://twitter.com/nschloe">@nschloe</a>
+          </div>
+        </div>
+      </slide>
+
+      <slide class="clearfix">
+        <h1>The problem</h1>
+        <p>
+          You read a paper and
+        </p>
+            <ul>
+              <li>
+                <img src="img/cantcomment.jpg" class="pull-right" style="max-width: 40%">
+                you don't understand what's going on</li>
+              <li>you think you found a mistake</li>
+              <li>there's a mistake and you didn't find it (but someone else
+                did)</li>
+              <li>you know a better paper about the topic</li>
+              <li>you discovered an improvement and would like to contribute it
+                to the original paper</li>
+            </ul>
+      </slide>
+
+      <slide class="slide-full-img" style="background-image: url('img/postit.png')">
+        <div class="box text-center lg-margin-top">
+          <h1>Enter PaperHive</h1>
+        </div>
+      </slide>
+
+      <slide class="slide-full-img" style="background-image: url('img/screenshot.png')">
+        <div class="box text-center xl-margin-top">
+          <h1>The Look</h1>
+        </div>
+      </slide>
+
+      <slide>
+        <h1>What can you do with PaperHive?</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li>Review and improve
+                <ul>
+                  <li>share your opinion on-the-fly</li>
+                  <li>add helpful formulas, figures, data, code, ...</li>
+                </ul>
+              </li>
+              <li>Discuss and learn
+                <ul>
+                  <li>ask and answer questions</li>
+                  <li>ignite fruitful conversations</li>
+                </ul>
+              </li>
+              <li>Annotate and discover
+                <ul>
+                  <li>attach your comments where they belong</li>
+                  <li>find relevant comments immediately</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </slide>
+
+      <slide>
+        <h1>A network of papers and researchers</h1>
+        <ul>
+          <li>Comments may link to other papers, code, data, ...</li>
+          <li>Forward references, finally!</li>
+          <li>Shared and structured discussions instead of unassociated sticky notes</li>
+        </ul>
+        <!-- TODO: pic w/ forward references, finally! -->
+      </slide>
+
+      <slide>
+        <h1>Open and citable</h1>
+        <ul>
+          <li>
+            Public comments are licensed under Creative Commons BY license
+            (CC-BY-4.0)</li>
+          <li>Each comment can be cited and reused (with proper attribution)</li>
+        </ul>
+        <p class="text-center">
+          <img src="img/cc-by.svg" style="width: 40%">
+        </p>
+      </slide>
+
+      <slide class="slide-full-img" style="background-image: url('img/data.png')">
+        <div class="box">
+          <h1>Our data is your data – API</h1>
+          <ul>
+            <li>open REST API for accessing public comments</li>
+            <li>everyone can build tools on top of the PaperHive infrastructure
+              <ul>
+                <li>enrich metrics</li>
+                <li>show comments wherever you want (e.g., on journal websites)</li>
+                <li>data/graph analysis</li>
+              </ul>
+            </li>
+            <li>
+              API documented on
+              <a href="http://docs.paperhive.apiary.io/">
+                docs.paperhive.apiary.io
+              </a>
+            </li>
+          </ul>
+        </div>
+      </slide>
+
+      <slide class="slide-full-img" style="background-image: url('img/extensions.jpg')">
+      <div class="box text-center lg-margin-top">
+        <h1>Browser extensions</h1>
+      </div>
+      </slide>
+
+      <slide>
+        <h1>Browser extensions</h1>
+        <div class="row">
+          <div class="col-md-6">
+            No need to adapt your workflow; use Firefox or Chrom{e,ium} and
+            install
+            <ul>
+              <li><a
+                  href="https://addons.mozilla.org/en-US/firefox/addon/paperhive/">the Firefox Add-on</a></li>
+              <li><a
+                  href="https://chrome.google.com/webstore/detail/paperhive/fihafdlllifbanclcjljledeifcdjbok">the Chrome Extension</a></li>
+            </ul>
+            Notfications galore!
+          </div>
+          <div class="col-md-6">
+            <img src="img/ff.png" class="img-responsive">
+          </div>
+        </div>
+      </slide>
+
+      <slide class="slide-full-img" style="background-image: url('img/no.gif')">
+        <div class="text-center box sm-margin-top">
+          <h1>Are we done yet?</h1>
+        </div>
+      </slide>
+
+      <slide>
+        <h1>Are we done yet?</h1>
+        <ul>
+          <li>Fresh alpha release</li>
+          <li>Current restrictions:
+            <ul>
+              <li><a href="http://arxiv.org">arxiv.org</a></li>
+              <li>PDFs</li>
+            </ul>
+          </li>
+          <li>Heavy development:
+            <a href="https://github.com/paperhive">github.com/paperhive</a>
+          </li>
+          <li>Data is reset every day</li>
+          <li>Feel free to play around!</li>
+          <li>Feedback loop is wide open (feature requests, bugs, ...)!</li>
+        </ul>
+      </slide>
+
+      <slide class="slide-full-img" style="background-image: url('img/future.gif')">
+        <div class="text-center box lg-margin-top">
+          <h1>The Future</h1>
+        </div>
+      </slide>
+
+      <slide>
+        <h1>Arriving soon</h1>
+        <ul>
+          <li>Notifications for authors and tracked papers</li>
+          <li>Discussion of paywalled papers</li>
+          <li>Linked data via JSON-LD, Open Annotation data model</li>
+          <li>Semantic annotations via tags (question, typo, correction, ...)</li>
+          <li>Private comments (personal or for a group)</li>
+          <li>Allow other formats than PDFs</li>
+          <li><strong>Conventional pre-publication peer-review process</strong></li>
+        </ul>
+      </slide>
+
+      <slide>
+        <h1>Hands-on</h1>
+        <ul>
+          <li>ORCID login</li>
+          <li>add a paper</li>
+          <li>ask or answer a question</li>
+          <li>point out a mistake</li>
+        </ul>
+      </slide>
+
+      <slide class="slide-dark">
+        <div class="box">
+          <h1>Contact</h1>
+          <div><a href="https://paperhive.org">
+              <i class="fa fa-fw fa-home"></i>
+              paperhive.org
+          </a></div>
+          <div><a href="https://twitter.com/paperhive">
+              <i class="fa fa-fw fa-twitter"></i>
+              @paperhive
+          </a></div>
+          <div><a href="mailto:info@paperhive.org">
+              <i class="fa fa-fw fa-envelope"></i>
+              info@paperhive.org
+          </a></div>
+          <div><a href="https://github.com/paperhive">
+              <i class="fa fa-fw fa-github"></i>
+              github.com/paperhive
+          </a></div>
+          <div><a href="https://plus.google.com/114787682678537396870">
+              <i class="fa fa-fw fa-google-plus"></i>
+              Google+ PaperHive
+          </a></div>
+        </div>
+      </slide>
+
+    </slides>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular/angular-animate.min.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

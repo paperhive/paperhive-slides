@@ -43,10 +43,14 @@ gulp.task('statics', function () {
   ], {base: 'bower_components/open-sans-fontface'})
     .pipe(gulp.dest('build/vendor/opensans'));
 
-  //var fontawesome = gulp.src('bower_components/fontawesome/fonts/*')
-  //  .pipe(gulp.dest('build/assets/fontawesome/fonts'));
+  var fontawesome = gulp.src([
+    'bower_components/font-awesome/fonts/*',
+    'bower_components/font-awesome/css/font-awesome.min.css',
+  ], {base: 'bower_components/font-awesome'})
+    .pipe(gulp.dest('build/vendor/fontawesome'));
 
-  return merge(statics, angular, angularBootstrap, bootstrap, jquery, opensans);
+  return merge(statics, angular, angularBootstrap, bootstrap, fontawesome,
+               jquery, opensans);
 });
 
 gulp.task('clean', function(cb) {
